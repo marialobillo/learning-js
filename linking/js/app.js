@@ -1,1 +1,1 @@
-alert('Your Javascript is linked');
+console.log(1+1);
