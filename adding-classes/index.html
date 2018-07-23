@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>16. Adding Classes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="add">Add a "red" class to me!</div>
+
+<div class="remove">Remove the class, "remove" from me!</div>
+
+<div class="contains">
+  <div>Do I have a "blue" class?</div>
+  <div class="blue">Do I have a "blue" class?</div>
+</div>
+
+<div class="toggle">Do I have a "red" class? If yes, remove it. If no, add it.</div>
+
+  <script type="text/javascript">
+    const p = document.querySelector('div');
+    p.classList.add('red')
+
+    const div = document.querySelector('div');
+    if(div.classList.contains('remove')){
+      div.classList.remove('remove');
+    }
+    console.log(div.classList);
+  </script>
+  </body>
+</html>
