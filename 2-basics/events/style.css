@@ -1,0 +1,20 @@
+body.button-is-clicked{
+  background-color: #99aefa;
+}
+
+button {
+  background-color: #1ce;
+}
+
+button.is-clicked {
+  background-color: #bada55;
+}
+
+
+.red{
+  background-color: red;
+}
+
+.blue{
+  background-color: blue;
+}
