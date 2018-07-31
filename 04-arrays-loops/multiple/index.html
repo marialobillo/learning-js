@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Selecting Multiple Element</title>
+  </head>
+  <body>
+    <div id="star-wars">
+      <div class="character" data-type="good-guy">Luke Skywalker</div>
+      <div class="character" data-type="good-guy">Yoda</div>
+      <div class="character" data-type="villain">Darth Vader</div>
+    </div>
+
+    <script type="text/javascript">
+      const goodguys = document.querySelectorAll('.character')
+      console.log(goodguys)
+      goodguys.forEach(item => item.classList.add('yay'))
+
+      goodguys.forEach(item => {
+        if( item.dataset.type == "villain" ) {
+          console.log(item.innerHTML)
+          item.classList.add('nay')
+        }
+      })
+
+      goodguys.forEach(item => {
+        item.classList.add('star-wars')
+      })
+    </script>
+  </body>
+</html>
